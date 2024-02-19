@@ -1,5 +1,5 @@
-from game_functions import load_image
+from game_functions import load_image, scroll_art_ascill
 
 def initial_screen():
     image = load_image("opening_image.txt")
-    print(image)
+    scroll_art_ascill(image)
