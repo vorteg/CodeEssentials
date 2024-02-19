@@ -1,5 +1,7 @@
+from opening_screen import initial_screen
+
 def main():
-    print("Hola Gente de twitch")
+    initial_screen()
 
 if __name__ == "__main__":
     main()
