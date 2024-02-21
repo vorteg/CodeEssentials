@@ -1,5 +1,6 @@
 import time
 import os
+import shutil
 from colorama import Fore, Style
 from pyfiglet import figlet_format
 
@@ -34,6 +35,23 @@ def load_bar():
     for i in range(101):
         time.sleep(.1)
         print_bar(i)
+
+
+def center_text(text):
+    console_size = shutil.get_terminal_size()
+    width_console = console_size.columns
+    left_spaces = abs((width_console - len(text)) // 2)
+    spaces = " " * left_spaces
+    return  Fore.LIGHTMAGENTA_EX + f"{spaces}{text}" + Style.RESET_ALL
+
+def writing_text(text, speed=0.05):
+    for character in text:
+        print(Fore.CYAN + character + Style.RESET_ALL, end="", flush=True)
+        time.sleep(speed)
+    input(
+        Fore.LIGHTYELLOW_EX + "\n Presiona Enter para continuar... " + Style.RESET_ALL
+    )
+
         
 
 
