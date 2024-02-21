@@ -24,3 +24,19 @@ def load_image(image_file):
 def print_title():
     title = figlet_format("Digitos Mortales")
     return Fore.RED + title + Style.RESET_ALL
+
+def load_bar():
+    def print_bar(progress):
+        bar = "█" * int(progress / 2)
+        spaces = " " * (50 - len(bar))
+        print(f"\r[{bar}{spaces}] {progress}% Complete", end="", flush=True)
+
+    for i in range(101):
+        time.sleep(.1)
+        print_bar(i)
+        
+
+
+
+if __name__ == "__main__":
+    load_bar()
