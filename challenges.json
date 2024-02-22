@@ -1,0 +1,5 @@
+{
+    "1":{"problema":"Norberto te a indicado que hay un cofre en la escena,tiene una etiqueta que dice:SU SUMA ES 12 Y SU PRODUCTO LLEGA A 32... El cofre tiene un teclado numérico del 0 al 9.Es una combinacion de 3 digitos 1 + 2 +3, algo asi...",
+        "respuesta":[[8,2,2],[6, 4, 2],[4, 4, 4]]        
+        }
+  }

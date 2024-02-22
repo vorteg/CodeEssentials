@@ -52,6 +52,14 @@ def writing_text(text, speed=0.05):
         Fore.LIGHTYELLOW_EX + "\n Presiona Enter para continuar... " + Style.RESET_ALL
     )
 
+def answer_validation(answer):
+    answer = (answer.lower)
+    correct_options = ["a","b","c"]
+    if answer in correct_options:
+        return True
+    else:
+        print("Respuesta no es valida. Debes ingresar 'a', 'b', o 'c'")
+        return False
         
 
 
