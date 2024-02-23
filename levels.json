@@ -1,0 +1,86 @@
+
+{
+    "levelInitial":{
+    "title":"Intro",
+    "voiceOff":
+      ["Norberto(voz en off, tono reflexivo): Es 28 de diciembre de 1997. Soy el inspector Norberto, y me han asignado la tarea de resolver una serie de casos que han sumergido a Andalucía en el pánico durante estos últimos 40 días. ¿Por qué estos números están tan presentes en estos sucesos? ¿Está todo vinculado porque la fecha de hoy suma exactamente 40? ¿Quién está detrás de todo esto?"]
+    ,
+    "npc":
+      ["Norberto: No somos supersticiosos, pero estos números nos están diciendo algo. Parece que están conectados, y estoy aquí para poner fin a esta pesadilla. Y tú... "]
+    ,
+    "questions":
+      ["¿cómo te llamas, novato?"]
+    ,
+    "answers":[" "]
+  
+  },
+  "level1":{
+     "title":"Escena del Crimen",
+     "voiceOff":["Norberto y [player] llegan a la escena del crimen en un oscuro callejón. La lluvia cae suavemente, reflejando la luz de las farolas sobre los charcos. "],
+     "npc":["Norberto (señalando la escena):Mira a tu alrededor, [player]. Este es el primer enigma de los números que hemos enfrentado. Una víctima destrozada por perros con una brutalidad inusitada. La víctima estaba viva mientras los perros hacían su trabajo. Pero aquí viene lo intrigante. ",
+    "Norberto: 1+4+6+5 = 16, que a su vez suma 7. Números grabados en la carne de la víctima con ferocidad. Y fíjate en esto...",
+      "Norberto: ...7 disparos, 7 impactos. Un número que se repite."]
+     ,
+     "questions":
+      ["¿Ves algún patrón en este enigma, [player]?"],
+    "answers":["a):Los números parecen significativos, Norberto. ¿Podría ser una especie de ritual numérico?",
+  "b):El 7 está por todas partes. ¿Podría ser un mensaje, un patrón que el asesino quiere que descubramos?",
+  "c):¡Es evidente! Los números suman 'AMON', un demonio canino que representa la ira. ¿Podría estar el asesino enviándonos un mensaje con estos números?"],
+    "values":{
+      "a":1,
+      "b":10,
+      "c":20
+    }
+  },
+  "level2":{
+     "title":"Camino a Cádiz",
+     "voiceOff":["Norberto y [player] emprenden el viaje hacia Cádiz en un automóvil policial. La carretera se despliega ante ellos, y la lluvia persiste, creando un ambiente melancólico."],
+     "npc":["Norberto (conduciendo, mirando de reojo): Y bien [player]"]
+     ,
+     "questions":
+      ["¿De dónde eres?"],
+    "answers":["a):Soy de la capital, de Sevilla. Siempre ha sido mi hogar.",
+  "b):Soy de aquí de Andalucía. He vivido en varios lugares, pero siempre he sido parte de esta tierra.",
+  "c):Vengo de lejos. No tengo una conexión profunda con Andalucía. Solo estoy aquí por el caso."],
+    "values":{
+      "a":1,
+      "b":10,
+      "c":20
+    }
+  },
+  "Kiosko":{
+     "title":"Kiosko",
+     "voiceOff":["Norberto estaciona el automóvil junto a un pequeño kiosco en el camino hacia Cádiz. La lluvia ha disminuido, pero el aire sigue húmedo. Norberto baja del vehículo y se acerca al kiosco para comprar algo para hidratarse y comer."],
+     "npc":["Norberto (entusiasmado):¿Te gustaría algo, [player]? Tienen algunas opciones decentes aquí. Y... oh, mira, también venden boletos de lotería. ¿Qué dices, deberíamos probar suerte? "]
+     ,
+     "questions":
+      ["¿Cuál es tu número de la suerte, que tal tu fecha de nacimiento? "],
+    "answers":["a):Quiero dar mi fecha de nacimiento.",
+  "b):Que tal el numero 7",
+  "c):MMM no se puede que sea el 23....."],
+    "values":{
+      "a":10,
+      "b":20,
+      "c":1
+    }
+  },
+  "Kiosko2":{
+     "title":"Aun en el Kiosko ",
+     "voiceOff":["...."],
+     "npc":["Norberto (sonríe): Bueno, [player], un poco de diversión no hace daño. Tomaré el 3 y tu número de la suerte. Tal vez esta vez tengamos suerte y nos llevemos un premio. "]
+     ,
+     "questions":[],
+    "answers":[],
+    "values":{ }
+  },
+  "level3":{
+     "title":"No mas enigmas",
+     "voiceOff":["Norberto realiza la compra, y la escena se desvanece mientras retoman el camino hacia Cádiz, con la esperanza de que la lotería les sonría y que el destino también les deje encontrar las respuestas que buscan.",
+     "Norberto y [player] llegan a Cádiz y observan las paredes de la casa del alcalde, donde enigmáticas inscripciones han aparecido. Un mensaje en particular destaca: Estoy más cerca de lo que crees. Soy..."],
+     "npc":["Norberto (observando las inscripciones):Más pistas, [player]. Parece que nuestro enemigo quiere comunicarse. Vamos a analizar esto"]
+     ,
+     "questions":[],
+    "answers":[],
+    "values":{ }
+  }
+  }

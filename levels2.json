@@ -1,0 +1,17 @@
+{"finish":{
+    "title":"Decisiones Cruciales",
+    "voiceOff":["Norberto encuentra una calle misteriosa que parece estar alineada como una flecha apuntando hacia el centro de la siguiente vía. El ambiente se vuelve más tenso a medida que avanzan. Norberto camina hacia el punto focal señalado por el entorno."],
+    "npc":["Norberto:  Esto sugiere que nuestro adversario está por revelar las características de su próxima víctima. Mira esos cronómetros, indicando 12 horas. Es posible que no esté diciendo quién será su siguiente víctima, sino qué características buscará. No nos distraigamos. Sigamos adelante y resolvamos este rompecabezas antes de que sea demasiado tarde.",
+   "Norberto:Esto es extraño. Todo en este lugar apunta hacia ese punto en el centro de la calle. "]
+    ,
+    "questions":
+     ["¿Recuerdas tu número de la suerte?"],
+   "answers":["a):No tengo un número en especial.",
+ "b):Mi número de la suerte es el 7.",
+ "c):Mi número de la suerte es 40."],
+   "values":{
+     "a":10,
+     "b":20,
+     "c":1
+   }
+ }}
