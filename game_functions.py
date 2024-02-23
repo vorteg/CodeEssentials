@@ -12,6 +12,16 @@ def clean_screen():
     else:
         os.system("clear")
 
+def delete_file(file_name):
+    try:
+        os.remove(file_name)
+        print(f"Archivo '{file_name}' borrado exitosamente.")
+    except FileNotFoundError:
+        print(f"Archivo '{file_name}' no encontrado.")
+    except Exception as e:
+        print(f"Error al intentar borrar el archivo '{file_name}': {e}")
+
+
 def scroll_art_ascill(art_ascii):
     lines = art_ascii.split("\n")
     for line in range(len(lines) + 1):

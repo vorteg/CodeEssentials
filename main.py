@@ -1,8 +1,9 @@
 from level_managment import level_manager
 from opening_screen import initial_screen
-from game_functions import load_bar,clean_screen,load_data,writing_text
+from game_functions import load_bar,clean_screen,load_data,writing_text, delete_file
 
 def main():
+    delete_file("player.json")
     initial_screen()
     load_bar()
     clean_screen()
