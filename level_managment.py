@@ -33,7 +33,7 @@ def next_levels(level, player_name):
     load_text(level["npc"], name_player=player_name)
     for text in level["questions"]:
         text = text.replace(PLAYER_SYMBOL_TEXT,player_name)
-        print(Fore.Red + text + Style.RESET_ALL)
+        print(Fore.RED + text + Style.RESET_ALL)
     for text in level["answers"]:
         text = text.replace(PLAYER_SYMBOL_TEXT,player_name)
         print(Fore.GREEN + text + Style.RESET_ALL)
@@ -130,7 +130,7 @@ def run_levels(levels, count=1):
             player_name = boot_level(level)
         else:
             answer = next_levels(level, player_name)
-            if title == "kiosko":
+            if title == "Kiosko":
                 player_score =  player_score + handle_kiosko_response(answer)
             else:
                 if level["values"]:
@@ -149,3 +149,5 @@ def level_manager():
 
 if __name__ == "__main__":
     level_manager()
+    # res = input("ingresa respuesta a b o c")
+    # handle_kiosko_response(res)

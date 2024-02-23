@@ -53,7 +53,7 @@ def writing_text(text, speed=0.05):
     )
 
 def answer_validation(answer):
-    answer = (answer.lower)
+    answer = (answer.lower())
     correct_options = ["a","b","c"]
     if answer in correct_options:
         return True
