@@ -1,7 +1,7 @@
 import json
 import time
 from colorama import Fore, Style
-from game_functions import clean_screen,center_text,writing_text,answer_validation
+from game_functions import clean_screen,center_text,writing_text,answer_validation, load_data
 
 PLAYER_SYMBOL_TEXT = "[player]"
 
@@ -141,11 +141,26 @@ def run_levels(levels, count=1):
 
     return player_score, count
 
+def option(alternative_player_description, score):
+    if score < 50:
+        return alternative_player_description["b"]
+    return alternative_player_description["a"]
 
 
 def level_manager():
     levels = load_levels("levels.json")
-    run_levels(levels)
+    levels2 = load_levels("levels2.json")
+    score, count = run_levels(levels)
+    data_player = load_data("player.json")
+    if data_player is None:
+        alternative_player_description = load_data("alternative.json")
+        opts = option(alternative_player_description, score)
+    else:
+        opts = data_player["user"]
+    clean_screen()
+    writing_text(opts)
+    final_score, _  = run_levels(levels2,count)
+    return score + final_score
 
 if __name__ == "__main__":
     level_manager()

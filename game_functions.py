@@ -1,8 +1,10 @@
 import time
 import os
 import shutil
+import json
 from colorama import Fore, Style
 from pyfiglet import figlet_format
+
 
 def clean_screen():
     if os.name == "nt":
@@ -60,6 +62,14 @@ def answer_validation(answer):
     else:
         print("Respuesta no es valida. Debes ingresar 'a', 'b', o 'c'")
         return False
+    
+def load_data(file_name):
+    try:
+        with open(file_name, "r") as file:
+            data = json.load(file)
+        return data
+    except FileNotFoundError:
+        return None
         
 
 
